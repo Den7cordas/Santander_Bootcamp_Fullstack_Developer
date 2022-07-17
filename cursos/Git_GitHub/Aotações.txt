@@ -141,7 +141,8 @@ colo nome e descrição
 clica em create repository
 
 
-comando git remote add origin mias o link do repositório que esta no GitHub
+comando git remote add origin mais o link do repositório que esta no GitHub para direcionar o repositório
+remoto para o local
 
 comando git remote -v  lista as litas de repositório remoto que tem cadastrados
 
