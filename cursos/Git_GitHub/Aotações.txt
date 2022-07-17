@@ -1,0 +1,159 @@
+Comandos básicos para um bom desempenho no terminal.
+
+GUI X CLI
+
+GUI interface grafica
+CLI linha de comando
+
+Comandos:
+
+
+                                         Windows              Unix(Linux)
+
+
+Mudar de pastas                           cd                          cd
+listar as pastas                         dir                          ls
+Criar pastas/ arquivos                   mkdir                       mkdir
+Deletar pastas/ arquivos                rmdir                        rm -rf 
+flegs usadas para apagar pastas no windows /s e /q
+
+O terminal do windows é derivado do Shell.
+O terminal do Linux é derivado do Bash
+
+
+                                      Mais comandos
+
+ 
+                                                 Windows                          Linux
+comando para entrar na pasta               cd e nome da pasta                 cd e nome da pasta                      
+comando para sair da  pasta                       cd ..                              cd ..                  
+limpar tela                                       cls                        clear ou control + L
+criar arquivo                                     echo                             echo
+
+Criar arquivo exemplo
+
+echo nome do arquivo > nome do arquivo com extensão
+
+echo hello > hello.txt
+  
+Tópicos fundamentais para entender o funcionamento do Git
+
+SHA1
+objetos fundamentais
+sistema distribuido
+segurança
+
+SHA1 algoritmo de encriptação que gera conjunto de caracteres identificador de 40 dígitos.
+
+Objetos internos do Git
+Blobs
+Trees
+Commits
+
+Comando para criar chave ssh no Git Bash (terminal)
+ssh-keygen -t ed25519 -C mais email
+Obs o C é maiúsculo 
+ed25519 é o tipo de criptografia da chave.
+
+Pasta criada 
+cd /c/users/De/.ssh
+
+comando “cat” visualiza o conteúdo de uma das chaves 
+
+comando “pwd” mostra o caminho completo dos diretórios
+
+comando para inicializar o ssh keygen lida com as chaves
+eval $(ssh-agent -s)
+
+comando para passar a chave para o agente
+ssh-add id-ed25519  tem que ser a chave privada.
+
+
+Iniciando um Git e criando um commit
+
+Iniciar o Git
+iniciando o versionamento
+Criar um commit
+
+Git init inicializa repositório
+Git add move arquivos e dar inicio ao versionamento
+Git commit cria um commit
+
+Criando um repositório
+
+A flag -a mostra arquivos ocultos
+
+comando ls -a lista todas as pastas até às ocultas
+Configurações iniciais para criar commits
+
+Obs quando feito pela primeira vez tem-se que usar os comandos para email e name.
+
+comando para email
+git config - -global user.email “coloque aqui o seu email”
+
+
+Comando para name
+git config - -global user.name "coloque o nome"
+
+Obs. agora e so adicionar os arquivos e criar os commits
+
+arquivos MD markdow arquivo tipo HTML
+
+comandos 
+
+git add mais nome do arquivo
+
+git add*
+
+git add .
+
+
+
+git commit -m "commit inicial" comentario ao criar um commit tem que ser deacordo com o arquivo
+
+git init   cria um repositório dentro da pasta  e começa o vercionsmento 
+
+git stsatus informa o estatus dos arquivos
+
+comando para mover arquivos
+
+mv maia nome do arquivo com extensão/cainho da pasta de destino?
+ex mv hello.txt ./arquivos/
+
+GtHub
+
+git config list informa a lista de configurações
+
+Comando para apagar email e name das configurações, para refazer a configuração de criar novo autor e email.
+
+git config - -global - -unset user.email
+
+git config - -global - -unset user.name
+
+agora é so configurar outro email e o name desejado com o comando user.
+
+
+GitHub 
+
+criando um repositório
+comando new repositório 
+colo nome e descrição
+clica em create repository
+
+
+comando git remote add origin mias o link do repositório que esta no GitHub
+
+comando git remote -v  lista as litas de repositório remoto que tem cadastrados
+
+
+comando git push origin master  leva o codigo do repositório local para o remoto
+
+obs master e a branch que envia o código
+
+Obs. Caso o código que temos na nossa maquina não tiver tods os arquivos do repositório remoto
+temos que usar o comando 
+git pull origin master 
+
+para pegar ou puxar as atualizações do repositório remoto para o local.
+
+
