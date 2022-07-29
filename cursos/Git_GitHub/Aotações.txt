@@ -12,7 +12,7 @@ Comandos:
 
 
 Mudar de pastas                           cd                          cd
-listar as pastas                         dir                          ls
+listar as pastas                              dir                          ls
 Criar pastas/ arquivos                   mkdir                       mkdir
 Deletar pastas/ arquivos                rmdir                        rm -rf 
 flegs usadas para apagar pastas no windows /s e /q
@@ -24,11 +24,11 @@ O terminal do Linux é derivado do Bash
                                       Mais comandos
 
  
-                                                 Windows                          Linux
+                                                                            Windows                          Linux
 comando para entrar na pasta               cd e nome da pasta                 cd e nome da pasta                      
-comando para sair da  pasta                       cd ..                              cd ..                  
-limpar tela                                       cls                        clear ou control + L
-criar arquivo                                     echo                             echo
+comando para sair da  pasta                                     cd ..                              cd ..                  
+limpar tela                                                                  cls                        clear ou control + L
+criar arquivo                                                              echo                             echo
 
 Criar arquivo exemplo
 
@@ -40,7 +40,7 @@ Tópicos fundamentais para entender o funcionamento do Git
 
 SHA1
 objetos fundamentais
-sistema distribuido
+sistema distribuído
 segurança
 
 SHA1 algoritmo de encriptação que gera conjunto de caracteres identificador de 40 dígitos.
@@ -76,7 +76,7 @@ iniciando o versionamento
 Criar um commit
 
 Git init inicializa repositório
-Git add move arquivos e dar inicio ao versionamento
+Git add move arquivos e dar início ao versionamento
 Git commit cria um commit
 
 Criando um repositório
@@ -97,7 +97,7 @@ git config - -global user.name "coloque o nome"
 
 Obs. agora e so adicionar os arquivos e criar os commits
 
-arquivos MD markdow arquivo tipo HTML
+arquivos MD markdown arquivo tipo HTML
 
 comandos 
 
@@ -109,28 +109,28 @@ git add .
 
 
 
-git commit -m "commit inicial" comentario ao criar um commit tem que ser deacordo com o arquivo
+git commit -m "commit inicial" comentário ao criar um commit tem que ser de acordo com o arquivo
 
-git init   cria um repositório dentro da pasta  e começa o vercionsmento 
+git init   cria um repositório dentro da pasta  e começa o versionamento 
 
-git stsatus informa o estatus dos arquivos
+git status informa o status dos arquivos
 
 comando para mover arquivos
 
-mv maia nome do arquivo com extensão/cainho da pasta de destino?
+mv move arquivo e tem que digitar  nome do arquivo com extensão e o caminho da pasta de destino.
 ex mv hello.txt ./arquivos/
 
-GtHub
+GitHub
 
 git config list informa a lista de configurações
 
-Comando para apagar email e name das configurações, para refazer a configuração de criar novo autor e email.
+Comando para apagar email e nome das configurações, para refazer a configuração de criar novo autor e email.
 
 git config - -global - -unset user.email
 
 git config - -global - -unset user.name
 
-agora é so configurar outro email e o name desejado com o comando user.
+Agora é só configurar outro email e o nome desejado com o comando user.
 
 
 GitHub 
@@ -144,17 +144,18 @@ clica em create repository
 comando git remote add origin mais o link do repositório que esta no GitHub para direcionar o repositório
 remoto para o local
 
-comando git remote -v  lista as litas de repositório remoto que tem cadastrados
+comando git remote -v  lista as listas de repositório remoto que tem cadastrados
 
 
-comando git push origin master  leva o codigo do repositório local para o remoto
+comando git push origin master  leva o código do repositório local para o remoto
 
 obs master e a branch que envia o código
 
-Obs. Caso o código que temos na nossa maquina não tiver tods os arquivos do repositório remoto
+Obs. Caso o código que temos na nossa máquina não tiver todos os arquivos do repositório remoto
 temos que usar o comando 
 git pull origin master 
 
 para pegar ou puxar as atualizações do repositório remoto para o local.
+
 
 
